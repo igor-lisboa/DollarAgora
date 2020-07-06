@@ -1,3 +1,12 @@
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-HY6BS9Z7KV"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-HY6BS9Z7KV');
+</script>
 <?php
 function get_string_between($string, $start, $end){
     $string = ' ' . $string;
@@ -21,6 +30,6 @@ function dollar_hoje($salva_arq_site=false){
     curl_close($ch);
     return $parsed;
 }
-
+ob_clean();
 echo dollar_hoje();
  ?>
